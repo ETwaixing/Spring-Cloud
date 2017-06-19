@@ -1,0 +1,19 @@
+server:
+  port: 7001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:ETwaixing/config-repo.git
+          searchPaths: config-repo
+          username: 244625313@qq.com
+          password: 123qazwsx
