@@ -9,3 +9,7 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
+#Dalston.SR1版本的，在这个版本中，hystrix默认是关闭状态，必须在application中配置feign.hystrix.enabled=true才能正常使用，否则断路器不生效
+feign:
+  hystrix:
+    enabled: true
