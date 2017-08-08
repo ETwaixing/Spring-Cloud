@@ -1,0 +1,11 @@
+server:
+  port: 2000
+
+spring:
+  application:
+    name: server
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: waixing
+    password: 123qazwsx
